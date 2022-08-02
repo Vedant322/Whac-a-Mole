@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "gilroy";
+}
+
+.main {
+  position: relative;
+  border: 20px solid black;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #98c75e;
+}
+
+.main .name {
+  font-family: "Permanent Marker", cursive;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+}
+
+.grid {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  border: 3px solid black;
+  background-color: #d4874d;
+  background-image: url("./Images/hole.png");
+  background-size: cover;
+}
+
+.square:hover {
+  background-color: burlywood;
+  transition: all ease-in-out cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.details {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.details h1 {
+  font-size: 30px;
+}
+
+.mole {
+  background-image: url("./Images/one.png");
+  background-size: cover;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 12%;
+  right: 19%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor {
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  position: fixed;
+  transition: all ease-out 0.2s;
+  pointer-events: none;
+}
+
+.cursor img {
+  width: 240px;
+}
+
+.start {
+  background-color: #797979;
+  font-weight: 900;
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-family: "Permanent Marker", cursive;
+}
+
+.start:hover {
+  background-color: #d4874d;
+}
+
+.center {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+}
